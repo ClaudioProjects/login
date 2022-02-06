@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --colorInput: #fff
+}
+
+html {
+    font-size: 62.5;
+    font-family: 'Karla', sans-serif;
+}
+
+body {
+    background-image: url(./background.svg);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 30rem;
+    height: 100%;
+    max-width: 95%;
+    margin-top: 0;
+    position: relative;
+}
+
+.formCss {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.margin {
+    position: absolute;
+    width: 100%;
+}
+
+h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    color: #C82268;
+}
+
+ul {
+    position: relative;
+    right: -1.3rem;
+    margin-bottom: 1rem;
+    color: rgba(255, 255, 255, 0.87);
+}
+
+.cadastro {
+    width: 100%;
+    height: 100%;
+    background:#292929;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: none;
+    margin: 1rem 0;
+}
+
+.login {
+    position: absolute;
+    width: 100%;
+    background: #292929;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: block;
+    margin-top: 1rem;
+}
+
+.inputMain {
+    height: 2rem;
+    width: 100%;
+    font-size: 1.2rem;
+    /* padding: 1rem; */
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+    background: none;
+    border: 0;
+    border-bottom: 1.7px solid #c82267ce;
+    color: #fff;
+}
+
+.inputMain:focus{
+    outline: 0;
+    border-bottom: 1.9px solid #e42675e8;
+}
+
+.inputMain::placeholder {
+    color: rgba(255, 255, 255, 0.52);
+}
+
+.submitBtn {
+    height: 3.5rem;
+    width: 100%;
+    background-color: #c51760cc;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    color: #fff;
+    border: 0;
+}
+
+.submitBtn:hover {
+    transition: 300ms ease-in-out;
+    background: #c51760;
+}
+
+.error-text{
+    /* color: rgb(209, 72, 72); */
+    color: rgba(241, 46, 95, 0.835);
+    margin-bottom: 0.3rem;
+}
+
+span {
+    text-align: center;
+    cursor: pointer;
+    color: #C82268;
+    margin-top: 0.5rem;
+    width: 100%;
+}
+
+
+@media (max-width: 365px){
+    html{
+        font-size: 95%;
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <section class='container'>
+        <div class="login">
+            <header>
+                <h1>LOGIN</h1>
+            </header>
+            <div class="mainForm">
+                <form class="formCss formLogin" action="/" method="POST">
+                    <input type="text" class="inputMain" placeholder="Usuario" autocomplete="off">
+                    <input type="password" class="inputMain" placeholder="Senha" autocomplete="off">
+                    <button type='submit' class='submitInputLogin submitBtn'>Login</button>
+                    <span class="toRegister">Criar conta</span>
+                </form>
+            </div>
+        </div>
+
+        <div class="margin">
+            <div class="cadastro">
+                <header>
+                    <h1>CADASTRO</h1>
+                    <ul>
+                        <li>Nenhum campo pode estar vazio</li>
+                        <li>Usuario só podera conter letra e/ou numeros</li>
+                        <li>Usuario devera conter entre 6 e 13 caracteres</li>
+                        <li>Senha devera conter entre 6 e 13 caracteres</li>
+                    </ul>
+                </header>
+                <div class="mainForm">
+                    <form class="formCss form" action="/" method="POST">
+                        <input type="text" id="inputName" class="inputMain check checkWord" placeholder="Nome" autocomplete="off">
+                        <input type="text" id="inputLastName" class="inputMain check checkWord" placeholder="Sobrenome" autocomplete="off">
+                        <input type="text" id="inputCpf" class="inputMain check inputCpf" placeholder="CPF" autocomplete="off">
+                        <input type="text" id="inputUser" class="inputMain check checkUser" placeholder="Usuario" autocomplete="off">
+                        <input type="password" id="inputPassword" class="inputMain check checkWord" placeholder="Senha" autocomplete="off">
+                        <input type="password" id="inputPasswordConfirm" class="inputMain check checkWord" placeholder="Confirmar senha" autocomplete="off">
+                        <button type='submit' class='submitInput submitBtn'>Cadastrar</button>
+                        <span class="toLogin">Ja tem uma conta</span>
+                    </form>
+                </div>
+            </div>
+            <div class="spacing"></div>
+        </div>
+    </section>
+    <script src="./assets/js/validaCPF.js"></script>
+    <script src="./assets/js/scripts.js"></script>
+</body>
+</html>
